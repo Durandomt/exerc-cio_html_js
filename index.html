@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durand_JS</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="cabeçalho">
+        <h1>Durand Investimentos</h1>
+        <p>A sua melhor corretora!</p>
+    </header>
+
+    <div class="container">
+        <h2>Depósitos e Saques!</h2>
+
+        <form id="form-exer">
+            <input type="number" id="deposit" required placeholder="depósito"/> <!--Número B, sendo maior que o Número A, a mensagem é positiva-->
+            <p class="error-message">O valor do deposito é inferior ao saque.</p>
+            <input type="number" id="money" required placeholder="saque"> <!--Número A, caso for maior que o número B, a mensagem é negativa-->
+            <textarea placeholder="Dê-nos um feedback" id="feedback"></textarea>
+            <button id="investir" type="submit">Vamos investir!!</button>
+        </form>
+        <p class="sucess-message"></p>
+        
+    </div>
+        
+    <script src="./main.js"> </script>
+    
+</body>
+</html>
